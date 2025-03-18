@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+    display: none;
+  }
+  /* For IE and Edge */
+  html {
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+  }
+html,body{
+  overflow-x:hidden ;
+}
+
+.moving-stripe {
+  will-change: transform;
+}
+
+<style>
+  @font-face {
+    font-family: 'Inter';
+    font-display: swap;
+  }
+</style>
+h1 {
+  min-height: 100px; /* Prevent shifting */
+}
