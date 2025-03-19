@@ -79,7 +79,7 @@ export default function GetInTouch() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/webflora/form", formData);
+      await axios.post("https://webflora-technologies-backend-3duf.vercel.app/webflora/form", formData);
       
       toast.success("Form submitted successfully!", {
         position: "top-right",
